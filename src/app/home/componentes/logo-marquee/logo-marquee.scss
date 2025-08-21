@@ -1,0 +1,28 @@
+.marquee-container {
+  white-space: nowrap;    
+  background: var(--color-black-2);
+}
+
+.marquee-logos {
+  animation: scroll-loop 15s linear infinite;
+}
+
+.marquee-logos img {
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+@keyframes scroll-loop {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee-logos {
+    animation-duration: 7s;
+  }
+}

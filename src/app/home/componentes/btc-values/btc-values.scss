@@ -1,0 +1,29 @@
+.btc-value-section {
+  white-space: nowrap;    
+  background: var(--color-black);
+}
+
+.app-btc-values {
+  white-space: nowrap;    
+  background: var(--color-yellow);
+}
+
+.btc-values {
+  animation: scroll-loop 15s linear infinite;
+  letter-spacing: 5px;
+}
+
+@keyframes scroll-loop {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .btc-values {
+    animation-duration: 7s;
+  }
+}

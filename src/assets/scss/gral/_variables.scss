@@ -1,0 +1,23 @@
+// _variables.scss
+$colors: (
+  'black': #000000,
+  'black-2': #1D1D1B,
+  'black-lighten': #4d4d4d,
+  'grey': #9E9E9E,
+  'red': #ef3046,
+  'green': #009877,
+  'yellow': #FF9B00,
+  'yellow-2': #FFCC00,
+  'brown': #934915
+);
+
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+
+  // PRIME PRIMARY COLOR
+  @for $i from 50 through 950 {
+    --primary-color-#{$i}: #FF9B00;
+  }
+}

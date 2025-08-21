@@ -1,0 +1,28 @@
+<article class="news-data-view w-full h-auto bg-cover bg-center padding-h py-8">
+    <section class="w-full xl:w-6 mx-auto overflow-x-auto" data-aos="fade-up" data-aos-duration="1000">
+        <p-carousel [value]="newsList" [numVisible]="2" [numScroll]="2" [responsiveOptions]="responsiveOptions" [circular]="false" [showNavigators]="false" [autoplayInterval]="5000">
+            <ng-template let-item #item>
+                <p-card class="w-20rem overflow-hidden mx-auto">
+                    <ng-template #header>
+                        <img alt="Card image" class="w-full"
+                            src="{{item.imgUrl}}" />
+                    </ng-template>
+
+                    <ng-template #title> 
+                        <span class="font-semibold text-lg">
+                            {{item.title}}
+                        </span>
+                    </ng-template>
+
+                    <ng-template #subtitle> Valor Agregado </ng-template>
+
+                    <ng-template #footer>
+                        <a href="{{item.link}}" target="_blank" rel="noopener noreferrer">
+                            <p-button label="Leer más →" />
+                        </a>
+                    </ng-template>
+                </p-card>
+            </ng-template>
+        </p-carousel>
+    </section>
+</article>

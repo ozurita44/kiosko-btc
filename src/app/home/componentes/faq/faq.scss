@@ -1,0 +1,25 @@
+.faq {
+    background: var(--color-black);
+
+    p {
+        opacity: .5;
+    }
+
+    p-accordion-header {
+        font-size: x-large;
+    }
+
+    p-accordion-content {
+        font-size: larger;
+
+        p {
+            padding: 1rem .25rem;
+        }
+    }
+
+    .p-accordionpanel {
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

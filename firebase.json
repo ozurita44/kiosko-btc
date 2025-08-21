@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/kiosko-btc/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

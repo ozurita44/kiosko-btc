@@ -1,0 +1,8 @@
+@use 'variables';
+
+// FONT COLORS
+@each $name, $color in variables.$colors {
+  .txt--#{$name} {
+    color: $color;
+  }
+}

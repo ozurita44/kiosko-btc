@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'assets/scss/gral/helpers';
+@use 'assets/scss/gral/padding';
+@use 'assets/scss/gral/buttons';
+@use 'assets/scss/gral/titles';
+@use 'assets/scss/gral/animations';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import "primeicons/primeicons.css";
+@import "aos/dist/aos.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+}
